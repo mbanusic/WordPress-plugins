@@ -1,0 +1,28 @@
+/*slider widget*/
+#carousel { margin:-29px 0 0; position:relative; overflow:hidden}
+#carousel #slider li{float:left; position:relative; list-style:none}
+#carousel #slider li:hover .title{ text-decoration:underline}
+#carousel #slider li a{ display:block}
+#carousel #slider li img{ width:643px; padding-left:5px; height:auto}
+
+#carousel .main_arrow{ height:415px; width:200px;position:absolute; top:0; cursor:pointer}
+#carousel .main_arrow span{ background:url('img/slider_pagination_arrow.png') no-repeat 0 0; width:60px; height:34px; cursor:pointer;  display:none; position:absolute; top:15px;}
+#carousel .main_arrow:hover span{ display:block;}
+#carousel .main_arrow.arrow_next{right:0;}
+#carousel .main_arrow.arrow_prev{left:5px;}
+
+#carousel .main_arrow.arrow_prev span{ background-position:0 0; left:15px}
+#carousel .main_arrow.arrow_prev span:hover{ background-position:0 -466px}
+#carousel .main_arrow.arrow_next span{ background-position:-440px 0; right:15px;}
+#carousel .main_arrow.arrow_next span:hover{ background-position: -440px -466px}
+
+
+
+#carousel #pager{ margin:10px 0 0; display:block; height:8px; text-align:center}
+#carousel #pager span{ width:8px; height:8px; display: inline-block; margin:0 4px; cursor:pointer; background:url('img/slider_pagination.png') no-repeat left top; text-indent:-999999px}
+#carousel #pager span:hover{ background-position:0 -8px;}
+#carousel #pager .selected span{ background-position:0 -16px;}
+.carousel_caption{ background:url('img/slider_caption.png') no-repeat; width:276px; height:134px; position:absolute; left:0; top:215px; padding:25px 15px; color:#fff; text-align:center; z-index:8}
+.carousel_caption .head_title a{ color:#ed1c24; font-size:11px; font-family:Arial, Helvetica, sans-serif; text-transform:uppercase; line-height:11px; padding-bottom:5px; letter-spacing:1px; display:block}
+.carousel_caption .title a{ font-size:28px; line-height:28px; color:#fff; display:block; margin-bottom:5px}
+.carousel_caption .meta{ font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#757575; text-transform:uppercase; line-height:23px; letter-spacing:1px}
